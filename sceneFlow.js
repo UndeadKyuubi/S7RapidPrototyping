@@ -79,7 +79,7 @@ class LevelClear extends Phaser.Scene {
             });
         }
         else if (this.currentLevel == 3) {
-            this.add.text(200, 300, "Good job!");
+            let text = this.add.text(200, 300, "Good job!");
             this.input.on('pointerdown', () => {
                 this.tweens.add({
                     targets: text,
@@ -95,7 +95,7 @@ class LevelClear extends Phaser.Scene {
             });
         }
         else {
-            this.add.text(200, 300, "The roly poly gets a badge!");
+            let text = this.add.text(200, 300, "The roly poly gets a badge!");
             this.input.on('pointerdown', () => {
                 this.tweens.add({
                     targets: text,
